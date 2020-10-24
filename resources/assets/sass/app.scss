@@ -1,13 +1,38 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
-@import "variables";
+// @import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Font awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+
+// $fa-font-path:"~@fortawesome/fontawesome-free/scss/";
+.user {
+    @extend %fa-icon;
+    @extend .fas;
+  
+    &:before {
+      content: fa-content($fa-var-user);
+    }
+  }
+  
+  .twitter {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-twitter);
+    }
+}
 
 
