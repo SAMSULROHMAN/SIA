@@ -17,22 +17,10 @@
 
 
 // $fa-font-path:"~@fortawesome/fontawesome-free/scss/";
-.user {
-    @extend %fa-icon;
-    @extend .fas;
-  
-    &:before {
-      content: fa-content($fa-var-user);
-    }
-  }
-  
-  .twitter {
-    @extend %fa-icon;
-    @extend .fab;
-  
-    &:before {
-      content: fa-content($fa-var-twitter);
-    }
-}
+@import "card-bg-color";
+
+// 
+
+
 
 

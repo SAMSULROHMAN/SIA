@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container mt-3 ">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+        <div class="col-md-12">
+            {{-- <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
 
                 <div class="panel-body">
@@ -62,7 +62,16 @@
                         </div>
                     </form>
                 </div>
+            </div> --}}
+
+            <div class="d-flex justify-content-center">
+                <div class="card bg-default">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                </div>
             </div>
+            
         </div>
     </div>
 </div>

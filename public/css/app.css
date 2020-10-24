@@ -11971,29 +11971,16 @@ a.text-dark:focus {
 
 .fa,
 .fas,
-.user,
 .far,
 .fal,
 .fad,
-.fab,
-.twitter {
+.fab {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1;
-}
-
-.user,
-.twitter {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
   line-height: 1;
 }
 
@@ -12090,21 +12077,17 @@ a.text-dark:focus {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
-.fa-pull-left.user,
 .far.fa-pull-left,
 .fal.fa-pull-left,
-.fab.fa-pull-left,
-.fa-pull-left.twitter {
+.fab.fa-pull-left {
   margin-right: .3em;
 }
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
-.fa-pull-right.user,
 .far.fa-pull-right,
 .fal.fa-pull-right,
-.fab.fa-pull-right,
-.fa-pull-right.twitter {
+.fab.fa-pull-right {
   margin-left: .3em;
 }
 
@@ -18092,8 +18075,7 @@ readers do not read off random characters that represent icons */
   src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?e2ca6541bff3a3e9f4799ee327b28c58) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?f075c50f89795e4cdb4d45b51f1a6800) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?ad527cc5ec23d6da66e8a1d6772ea6d3) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?8300bd7f30e0a313c1d772b49d96cb8e) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?2f12242375edd68e9013ecfb59c672e9) format("svg");
 }
 
-.fab,
-.twitter {
+.fab {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
@@ -18132,17 +18114,96 @@ readers do not read off random characters that represent icons */
 }
 
 .fa,
-.fas,
-.user {
+.fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
-.user:before {
-  content: "\F007";
+.bg-primary {
+  background-color: #007bff !important;
 }
 
-.twitter:before {
-  content: "\F099";
+a.bg-primary:hover,
+a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #0062cc !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+a.bg-secondary:hover,
+a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #545b62 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+a.bg-success:hover,
+a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #1e7e34 !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+a.bg-info:hover,
+a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #117a8b !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+a.bg-warning:hover,
+a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #d39e00 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+a.bg-danger:hover,
+a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #bd2130 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+a.bg-light:hover,
+a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+a.bg-dark:hover,
+a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
 }
 

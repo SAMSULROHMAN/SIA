@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        {{-- <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -69,6 +69,13 @@
                         @endif
                     </ul>
                 </div>
+            </div>
+        </nav> --}}
+
+        <nav class="navbar navbar-expand navbar-light bg-light shadow-sm">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Home</a>
             </div>
         </nav>
 
