@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container mt-3">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        {{-- <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Reset Password</div>
 
@@ -21,7 +21,7 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                <input id="email" type="email" class="form-control" email="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -39,6 +39,39 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div> --}}
+        <div class="col-md-12">
+            <div class="d-flex justify-content-center">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                <div class="card bg-light shadow-sm">
+                    <div class="card-body">
+                        <h6 class="card-title">Reset Password</h6>
+                        
+                        <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+                            {{ csrf_field() }}
+                            <div class="input-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                                </div>
+                                <input type="email" class="form-control" name="email" id="inlineFormInputGroup" placeholder="Enter Your Email" required>
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa fa-paper-plane"></i> Send Password Reset Link
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
