@@ -67,7 +67,7 @@
             <div class="d-flex justify-content-center">
                 <div class="card bg-default">
                     <div class="card-body">
-                      This is some text within a card body.
+                     
                     </div>
                 </div>
             </div>
