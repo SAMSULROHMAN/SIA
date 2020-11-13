@@ -8,6 +8,11 @@
                 <div class="card">
                     <div class="card-header">
                         Data Customer
+                        <div class="float-right">
+                            <a href="{{ route('customer.create') }}" class="btn btn-sm btn-success">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="card-body">
                         @php
